@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  color: var(--bs-light);
+  background: var(--bs-dark);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+a {
+  color: var(--bs-cyan);
+}
+a:hover {
+  color: var(--bs-yellow);
+}
+
+.container {
+  height: 100%;
+  height: 100%;
+  max-height: 350px;
+}
+
+.jumbotron {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbotron .display-4 {
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
+}
+.jumbotron .lead {
+  text-align: center;
+}
+
+.container-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 98%;
+}
+
+@media screen and (max-width: 840px) {
+  html,
+  body {
+    padding: 1rem;
+    margin: 0;
+  }
+  .container {
+    margin: 0;
+    padding: 0;
+    padding: 60px 0px;
+  }
+  .jumbotron .display-4 {
+    font-weight: bold;
+    font-size: 32px;
+  }
+  .table {
+    margin: 0 -2rem;
+    width: 100vw;
+  }
+  .table tr {
+    display: grid;
+    grid-auto-flow: row;
+  }
+  .table tr:not(:nth-child(1)) {
+    margin-top: 2rem;
+  }
+  .table thead {
+    display: none;
+  }
+  .table tr td {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .table tr td:nth-child(1) {
+    font-size: 1.5rem;
+    background-color: var(--bs-gray-800);
+  }
+  .table tr td:nth-child(2)::before {
+    display: block;
+    content: "Documentos:";
+    font-weight: bold;
+  }
+  .table tr td:nth-child(3)::before {
+    display: inline-block;
+    content: "Fecha:";
+    font-weight: bold;
+    padding-right: 0.5rem;
+  }
+  .table tr td:nth-child(4)::before {
+    display: block;
+    content: "Tweet relacionado:";
+    font-weight: bold;
+  }
+  .table tr td:nth-child(5)::before {
+    display: block;
+    content: "Notas:";
+    font-weight: bold;
+  }
+  footer {
+    margin: 0 -2rem;
+    width: 100%;
+    padding: 2rem;
+    background-color: var(--bs-black);
+    color: white;
+  }
+  footer p {
+    margin: 0;
+  }
+}
