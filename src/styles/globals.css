@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sol .wink {
+  display: none;
+}
+
+.sol:hover .wink {
+  display: block;
+}
+
+.sol:hover .normal {
+  display: none;
+}
